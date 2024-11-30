@@ -13,6 +13,7 @@ public class ConnectFour {
         char last = 'Y';
         
         boolean notFound = true;
+        
         while (notFound) {
             if (last == 'Y') {
                 last = playR(plays);
@@ -30,7 +31,7 @@ public class ConnectFour {
         if (winFound(plays))
             System.out.println("The " + (last == 'R'? "red": "yellow") + " player won");
         else
-            System.out.println("It is a draw. Good game!");
+            System.out.println("It's a draw. Good game!");
     }
     
     
@@ -50,7 +51,7 @@ public class ConnectFour {
     
             
     /*
-    Prints out the grid witht the current state of the game including all 
+    Prints out the grid with the current state of the game including all 
     plays made
     */
     static void grid(char[][] plays) {
